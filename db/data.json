@@ -1,0 +1,63 @@
+[
+  {
+    "countriesID": 1,
+    "countries":"USA",
+    "numberOfCompanies":128
+    
+  },
+  {
+    "countriesID": 2,
+    "countries": "China",
+    "numberOfCompanies":98
+    
+  },
+  {
+    "countriesID": 3,
+    "countries": "Japan",
+    "numberOfCompanies":54
+    
+  },
+  
+  {
+    "countriesID": 4,
+    "countries": "France",
+    "numberOfCompanies":31
+    
+  },
+  {
+    "countriesID": 5,
+    "countries": "UK",
+    "numberOfCompanies":29
+    
+  },
+  
+  {
+    "countriesID": 6,
+    "countries": "Germany",
+    "numberOfCompanies":28
+    
+  },
+  {
+    "countriesID": 7,
+    "countries": "SouthKorea",
+    "numberOfCompanies":17
+    
+  },
+  
+  {
+    "countriesID": 8,
+    "countries": "Netherlands",
+    "numberOfCompanies":13
+    
+  },
+  {
+    "countriesID": 9,
+    "countries": "Switerzland",
+    "numberOfCompanies":12
+  },
+  {
+    "countriesID": 10,
+    "countries": "Canada",
+    "numberOfCompanies":11
+  }
+]
