@@ -1,22 +1,55 @@
-extends layout
 
-block content
-	div.container
-		div.row
-			div.col-sm-6.col-md-4.col-md-offset-4
-				#user
-					h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
-						div.signup-wall
-							ul.user-details
-								li Username ---> #{user.username}
-								li Email    ---> #{user.email}
-								li First Name ---> #{user.firstName} 
-								li Last Name ---> #{user.lastName}
-						a(href='/signout', class='text-center new-account') Sign Out
-	div(ng-controller='MainController')
-		div
-			#chart_div(style='width: 900px; height: 500px;')
-			
-			
+include mixins
+
+doctype
+html( lang="en" )
+    head
+        title Isys 475 Assignment 3
+       
+        //- Bootswatch Theme Superhero
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/superhero/bootstrap.min.css", rel="stylesheet")
+ 
+    body(style="padding-bottom:10rem;")
+        .container
+ 
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js")
+        script(src="https://www.google.com/jsapi")
+        script(src="javascripts/chart-app.js")
 
 
+nav.navbar.navbar-default( role="navigation" )
+    .navbar-header
+        button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand Isys 475 Assignment 3
+ 
+    #navbar-inverse.collapse.navbar-collapse
+        ul.nav.navbar-nav
+            li.active: a( href="/") Sign Out
+            
+     
+    div.row
+    div.col-md-6
+    
+        body(ng-app='simple-chart')
+        div(ng-controller='MainController')
+        #chart_div(style='width: 900px; height: 500px;')
+    
+div.col-md-6
++button("primary", "https://en.wikipedia.org/wiki/Fortune_Global_500") Wikipedia Source
+div.col-md-6
+
+dv.row
+div.col-md-6
+
+
+        
+        
+        //- includes/foot.jade
+#footer
+  p Isys 475 at San Francisco State University

@@ -71,10 +71,7 @@ module.exports = function(passport) {
 	);
 	
 	
-	
-	
-	
-	
+
 	
 	
 	router.get('/login/linkedin',
@@ -87,55 +84,7 @@ module.exports = function(passport) {
 			failureRedirect : '/'
 		})
 	);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	//MLL - data route, only if authenticated!
 	router.get('/data', isAuthenticated, function(req, res, next) {
 	  GraphData.find({}, {_id: 0}, function(err, data){
